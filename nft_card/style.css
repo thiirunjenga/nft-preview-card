@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:wght@200&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* text colors */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /* component colors */
+    --main-bg-color: hsl(217, 54%, 11%);
+    --card-bg-color: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --white: #fff;
+}
+
+body{
+    max-width: 100%;
+    font-size: 18px;
+    font-weight: 300, 400, 600;
+    background-color: var(--main-bg-color);
+}
+
+p{
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+}
+
+hr{
+    border: 1px solid --line-color;   
+}
+
+.container{
+    max-width: 350px;
+    height: 610px;
+    margin: auto;
+    background-color: var(--card-bg-color);
+    /* border: 1px solid red; */
+    border-radius: 12px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding-top: 12px;
+    box-shadow: -10px 12px 68px 8px rgba(38,126,148,0.64);
+}
+.img__container{
+    max-width: 330px;
+    height: 300px;
+    margin: auto;
+    /* margin-top: 10px; */
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.nft__summary{
+    color: var(--soft-blue);
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-top: 18px;
+    text-align: left;
+}
+.nft__summary h3{
+    color: var(--white);
+    font-family: 'Outfit', sans-serif;
+    margin-top: 12px;
+}
+.nft__summary p{
+    margin-top: 12px;
+}
+
+.token__summary{
+    display: flex;
+    margin-right: 16px;
+    margin-left: 16px;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.eth__token{
+    display: flex;
+    color:var(--cyan);
+    font-family: 'Outfit', sans-serif;
+}
+.eth__token p, .time__update p{
+    margin-left: 8px;
+}
+
+.time__update{
+    display: flex;
+    color: var(--soft-blue);
+    overflow-y: hidden;
+    
+}
+hr{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.author__summary{
+    display: flex;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    align-items: center;
+
+
+}
+.author__summary img{
+    border: 2px solid #fff;
+    border-radius: 100px;
+    height: 60px;
+    width:60px;
+}
+
+.author__summary p{
+    font-family: 'outfit', sans-serif;
+    font-size: 18px;
+    margin-left: 20px;
+    color: var(--soft-blue);
+}
+.author__summary span{
+    color: var(--white);
+
+}
