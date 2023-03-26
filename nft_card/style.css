@@ -39,22 +39,43 @@ hr{
     height: 610px;
     margin: auto;
     background-color: var(--card-bg-color);
-    /* border: 1px solid red; */
     border-radius: 12px;
-    margin-top: 150px;
+    margin-top: 80px;
     margin-bottom: 150px;
     padding-top: 12px;
     box-shadow: -10px 12px 68px 8px rgba(38,126,148,0.64);
 }
+
 .img__container{
     max-width: 330px;
     height: 300px;
     margin: auto;
-    /* margin-top: 10px; */
-    /* border: 1px solid red; */
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
 }
+
+
+.img__reveal{
+    position: absolute;
+    background-color: var(--card-bg-color);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--cyan);
+    opacity: 60%;
+    visibility: hidden;
+}
+
+.img__container:hover .img__reveal{
+    visibility: visible;
+    cursor: pointer;
+}
+
 
 .nft__summary{
     color: var(--soft-blue);
@@ -67,7 +88,13 @@ hr{
     color: var(--white);
     font-family: 'Outfit', sans-serif;
     margin-top: 12px;
+    cursor: pointer;
 }
+
+.nft__summary h3:hover{
+    color: var(--cyan);
+}
+
 .nft__summary p{
     margin-top: 12px;
 }
@@ -125,5 +152,8 @@ hr{
 }
 .author__summary span{
     color: var(--white);
-
+    cursor: pointer;
+}
+.author__summary span:hover{
+    color: var(--cyan);
 }
